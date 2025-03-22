@@ -1,114 +1,60 @@
-parser grammar parserGramaticaEspanol;
+lexer grammar gramaticaEspanol;
 
-options {
-    tokenVocab = gramaticaEspanol;
-}
+// Palabras reservadas
+FUNCION : 'funcion';
+SI : 'si';
+ENTONCES : 'entonces:';
+FIN : 'fin';
+MIENTRAS : 'mientras';
+ASIGNA : 'asigna';
+A_LA : 'a la';
+DEVUELVE : 'devuelve';
+ES_UN : 'es un';
+ARREGLO_DE : 'arreglo de';
 
-// Programa principal
-programa
-    : instruccion+ EOF
-    ;
+// Operadores relacionales
+ES_DISTINTO_DE : 'es distinto de';
+ES_IGUAL_QUE : 'es igual que';
+ES_MAYOR_QUE : 'es mayor que';
+ES_MENOR_QUE : 'es menor que';
+ES_MAYOR_O_IGUAL_QUE : 'es mayor o igual que';
+ES_MENOR_O_IGUAL_QUE : 'es menor o igual que';
 
-// Instrucciones
-instruccion
-    : declaracion PUNTO
-    | asignacion PUNTO
-    | sentencia_if
-    | sentencia_while
-    | definicion_funcion
-    | retorno PUNTO
-    | expresion PUNTO
-    ;
+// Operadores aritméticos
+MAS : 'mas';
+MENOS : 'menos';
+POR : 'por';
+ENTRE : 'entre';
 
-// Declaraciones
-declaracion
-    : ID ES_UN TIPO_DATO                                           // DeclaracionSimple
-    | ID ES_UN ARREGLO_DE TIPO_DATO DE dimension                   // DeclaracionArreglo
-    ;
+// Operadores lógicos
+Y : 'y';
+O : 'o';
+NO : 'no';
 
-// Dimensiones de arreglos (1D, 2D, 3D, etc.)
-dimension
-    : NUMERO                                                       // Dimension1D
-    | NUMERO POR NUMERO                                            // Dimension2D
-    | NUMERO POR NUMERO POR NUMERO                                 // Dimension3D
-    ;
+// Tipos de datos
+TIPO_DATO : 'entero' | 'real' | 'texto' | 'bit';
 
-// Asignaciones
-asignacion
-    : ID ASIGNA expresion
-    ;
+// Identificadores
+ID : [a-zA-ZáéíóúÁÉÍÓÚñÑ][a-zA-Z0-9_áéíóúÁÉÍÓÚñÑ]*;
 
-// Estructuras de control
-sentencia_if
-    : SI condicion ENTONCES bloque FIN
-    ;
+// Números
+NUMERO : [0-9]+ ('.' [0-9]+)?;
 
-sentencia_while
-    : MIENTRAS condicion ENTONCES bloque FIN
-    ;
+// Cadenas
+CADENA : '"' (~["\r\n])* '"';
 
-// Definición de funciones
-definicion_funcion
-    : FUNCION ID PARENTESIS_IZQ parametros? PARENTESIS_DER DOS_PUNTOS bloque FIN
-    ;
+// Comentarios
+COMENTARIO : 'Nota:' .*? '/' -> skip;
 
-parametros
-    : ID (COMA ID)*
-    ;
+// Delimitadores
+PARENTESIS_IZQ : '(';
+PARENTESIS_DER : ')';
+DOS_PUNTOS : ':';
+PUNTO : '.';
+COMA : ',';
 
-// Retorno
-retorno
-    : DEVUELVE expresion
-    ;
+// Espacios en blanco y saltos de línea
+WS : [ \t\r\n]+ -> skip;
 
-// Bloque de código
-bloque
-    : instruccion+
-    ;
-
-// Condiciones
-condicion
-    : expresion operador_relacional expresion                      // CondicionRelacional
-    | expresion                                                    // CondicionExpresion
-    | condicion Y condicion                                        // CondicionAnd
-    | condicion O condicion                                        // CondicionOr
-    | NO condicion                                                 // CondicionNot
-    | PARENTESIS_IZQ condicion PARENTESIS_DER                      // CondicionParentesis
-    ;
-
-operador_relacional
-    : ES_IGUAL_QUE
-    | ES_DISTINTO_DE
-    | ES_MAYOR_QUE
-    | ES_MENOR_QUE
-    | ES_MAYOR_O_IGUAL_QUE
-    | ES_MENOR_O_IGUAL_QUE
-    ;
-
-// Expresiones
-expresion
-    : termino                                                      // ExpresionTermino
-    | expresion MAS expresion                                      // ExpresionSuma
-    | expresion MENOS expresion                                    // ExpresionResta
-    | expresion POR expresion                                      // ExpresionMultiplicacion
-    | expresion ENTRE expresion                                    // ExpresionDivision
-    | expresion A_LA expresion                                     // ExpresionPotencia
-    | PARENTESIS_IZQ expresion PARENTESIS_DER                      // ExpresionParentesis
-    | llamada_funcion                                              // ExpresionLlamadaFuncion
-    ;
-
-// Término
-termino
-    : ID                                                           // TerminoID
-    | NUMERO                                                       // TerminoNumero
-    | CADENA                                                       // TerminoCadena
-    ;
-
-// Llamada a función
-llamada_funcion
-    : ID PARENTESIS_IZQ argumentos? PARENTESIS_DER
-    ;
-
-argumentos
-    : expresion (COMA expresion)*
-    ;
+// Capturar cualquier otro carácter como error
+ERROR : .;
