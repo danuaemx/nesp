@@ -1,0 +1,32 @@
+Nota: Este es un programa de ejemplo para probar el analizador léxico y sintáctico./
+
+funcion factorial(n):
+    si n es menor o igual que 1 entonces:
+        devuelve 1.
+    fin
+    devuelve n por factorial(n menos 1).
+fin
+
+Nota: Ejemplo de declaración de variables y arreglos./
+contador es un entero.
+temperatura es un real.
+nombre es un texto.
+activo es un bit.
+
+Nota: Declaración de arreglos según el formato especificado./
+vector es un arreglo de entero de 10.
+matriz es un arreglo de real de 3 por 3.
+cubo es un arreglo de entero de 2 por 2 por 2.
+
+Nota: Ejemplo de asignación y operaciones./
+contador asigna 1.
+mientras contador es menor que 10 entonces:
+    contador asigna contador mas 1.
+    si contador es igual que 5 entonces:
+        Nota: Esto es un comentario dentro del bloque./
+        temperatura asigna 25.5.
+    fin
+fin
+
+resultado asigna 2 a la 3.
+nombre asigna "Hola Mundo".

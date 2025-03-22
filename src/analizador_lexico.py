@@ -124,7 +124,7 @@ def main():
     """
     if len(sys.argv) < 2:
         print("Uso:")
-        print("  python analizador_lexico.py archivo.txt")
+        print("  python analizador_lexico.py ejemplo.nesp")
         print("  python analizador_lexico.py -c \"codigo fuente\"")
         return
     
