@@ -3,7 +3,7 @@
 
 import sys
 from antlr4 import *
-from src.gramaticaEspanol import gramaticaEspanol as gramaticaEspanolLexer
+from gramaticaEspanol import gramaticaEspanol as gramaticaEspanolLexer
 from antlr4.error.ErrorListener import ErrorListener
 
 class MiErrorListener(ErrorListener):
