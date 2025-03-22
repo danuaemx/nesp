@@ -12,6 +12,7 @@ A_LA : 'a la';
 DEVUELVE : 'devuelve';
 ES_UN : 'es un';
 ARREGLO_DE : 'arreglo de';
+DE : 'de';
 
 // Operadores relacionales
 
