@@ -3,8 +3,7 @@
 
 import sys
 from antlr4 import *
-from gramaticaEspanolLexer import gramaticaEspanolLexer
-from parserGramaticaEspanolParser import parserGramaticaEspanolParser
+from src.gramaticaEspanol import gramaticaEspanol as gramaticaEspanolLexer
 from antlr4.error.ErrorListener import ErrorListener
 
 class MiErrorListener(ErrorListener):
@@ -22,6 +21,7 @@ def ejecutar_analisis_lexico(codigo_fuente):
     """
     Ejecuta únicamente el análisis léxico del código fuente.
     """
+
     # Crear el stream de caracteres desde el código fuente
     input_stream = InputStream(codigo_fuente)
     
@@ -57,41 +57,6 @@ def ejecutar_analisis_lexico(codigo_fuente):
     lexer.reset()
     
     return resultado, error_listener.getErrores()
-
-def ejecutar_analisis_sintactico(codigo_fuente):
-    """
-    Ejecuta el análisis léxico y sintáctico del código fuente.
-    """
-    # Crear el stream de caracteres desde el código fuente
-    input_stream = InputStream(codigo_fuente)
-    
-    # Crear el lexer
-    lexer = gramaticaEspanolLexer(input_stream)
-    
-    # Desactivar la salida de errores por consola
-    lexer.removeErrorListeners()
-    error_listener_lexico = MiErrorListener()
-    lexer.addErrorListener(error_listener_lexico)
-    
-    # Crear el stream de tokens
-    token_stream = CommonTokenStream(lexer)
-    
-    # Crear el parser
-    parser = parserGramaticaEspanolParser(token_stream)
-    
-    # Desactivar la salida de errores por consola para el parser
-    parser.removeErrorListeners()
-    error_listener_sintactico = MiErrorListener()
-    parser.addErrorListener(error_listener_sintactico)
-    
-    # Iniciar el análisis sintáctico desde la regla raíz 'programa'
-    try:
-        tree = parser.programa()
-        # Si llegamos aquí sin excepción, el análisis sintáctico fue exitoso
-        return True, [], error_listener_lexico.getErrores() + error_listener_sintactico.getErrores()
-    except Exception as e:
-        # Si hay una excepción, el análisis sintáctico falló
-        return False, [str(e)], error_listener_lexico.getErrores() + error_listener_sintactico.getErrores()
 
 def imprimir_tokens(tokens):
     """
@@ -132,25 +97,7 @@ def procesar_archivo(nombre_archivo):
         tokens, errores_lexicos = ejecutar_analisis_lexico(codigo_fuente)
         imprimir_tokens(tokens)
         imprimir_errores(errores_lexicos)
-        
-        # Si hay errores léxicos, no continuamos con el análisis sintáctico
-        if errores_lexicos:
-            print("\nSe encontraron errores léxicos. Corrigiendo antes de continuar con el análisis sintáctico.")
-            return
-        
-        # Análisis sintáctico
-        exito, excepciones, errores_sintacticos = ejecutar_analisis_sintactico(codigo_fuente)
-        
-        print("\n=== ANÁLISIS SINTÁCTICO ===")
-        if exito and not errores_sintacticos:
-            print("El análisis sintáctico fue exitoso. El código es válido según la gramática.")
-        else:
-            print("El análisis sintáctico falló.")
-            if excepciones:
-                print("\n=== EXCEPCIONES ===")
-                for excepcion in excepciones:
-                    print(f"- {excepcion}")
-            imprimir_errores(errores_sintacticos)
+
             
     except FileNotFoundError:
         print(f"Error: No se encontró el archivo '{nombre_archivo}'")
@@ -166,25 +113,7 @@ def procesar_texto(codigo_fuente):
         tokens, errores_lexicos = ejecutar_analisis_lexico(codigo_fuente)
         imprimir_tokens(tokens)
         imprimir_errores(errores_lexicos)
-        
-        # Si hay errores léxicos, no continuamos con el análisis sintáctico
-        if errores_lexicos:
-            print("\nSe encontraron errores léxicos. Corrigiendo antes de continuar con el análisis sintáctico.")
-            return
-        
-        # Análisis sintáctico
-        exito, excepciones, errores_sintacticos = ejecutar_analisis_sintactico(codigo_fuente)
-        
-        print("\n=== ANÁLISIS SINTÁCTICO ===")
-        if exito and not errores_sintacticos:
-            print("El análisis sintáctico fue exitoso. El código es válido según la gramática.")
-        else:
-            print("El análisis sintáctico falló.")
-            if excepciones:
-                print("\n=== EXCEPCIONES ===")
-                for excepcion in excepciones:
-                    print(f"- {excepcion}")
-            imprimir_errores(errores_sintacticos)
+
             
     except Exception as e:
         print(f"Error inesperado: {e}")
