@@ -1,4 +1,4 @@
-# Generated from src/parserGramaticaEspanol.g4 by ANTLR 4.13.2
+# Generated from src_main/parserGramaticaEspanol.g4 by ANTLR 4.13.2
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -10,73 +10,75 @@ if sys.version_info[1] > 5:
 
 def serializedATN():
     return [
-        4,1,36,197,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        4,1,36,200,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
         6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,13,
         2,14,7,14,2,15,7,15,2,16,7,16,1,0,4,0,36,8,0,11,0,12,0,37,1,0,1,
         0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,
         1,57,8,1,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,3,2,68,8,2,1,3,1,3,
-        1,3,1,3,1,3,1,3,1,3,1,3,1,3,3,3,79,8,3,1,4,1,4,1,4,1,4,1,5,1,5,1,
-        5,1,5,1,5,1,5,1,6,1,6,1,6,1,6,1,6,1,6,1,7,1,7,1,7,1,7,3,7,101,8,
-        7,1,7,1,7,1,7,1,7,1,7,1,8,1,8,1,8,5,8,111,8,8,10,8,12,8,114,9,8,
-        1,9,1,9,1,9,1,10,4,10,120,8,10,11,10,12,10,121,1,11,1,11,1,11,1,
-        11,1,11,1,11,1,11,1,11,1,11,1,11,1,11,1,11,3,11,136,8,11,1,11,1,
-        11,1,11,1,11,1,11,1,11,5,11,144,8,11,10,11,12,11,147,9,11,1,12,1,
-        12,1,13,1,13,1,13,1,13,1,13,1,13,1,13,3,13,158,8,13,1,13,1,13,1,
-        13,1,13,1,13,1,13,1,13,1,13,1,13,1,13,1,13,1,13,1,13,1,13,1,13,5,
-        13,175,8,13,10,13,12,13,178,9,13,1,14,1,14,1,15,1,15,1,15,3,15,185,
-        8,15,1,15,1,15,1,16,1,16,1,16,5,16,192,8,16,10,16,12,16,195,9,16,
-        1,16,0,2,22,26,17,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,
-        0,2,1,0,12,17,1,0,26,28,206,0,35,1,0,0,0,2,56,1,0,0,0,4,67,1,0,0,
-        0,6,78,1,0,0,0,8,80,1,0,0,0,10,84,1,0,0,0,12,90,1,0,0,0,14,96,1,
-        0,0,0,16,107,1,0,0,0,18,115,1,0,0,0,20,119,1,0,0,0,22,135,1,0,0,
-        0,24,148,1,0,0,0,26,157,1,0,0,0,28,179,1,0,0,0,30,181,1,0,0,0,32,
-        188,1,0,0,0,34,36,3,2,1,0,35,34,1,0,0,0,36,37,1,0,0,0,37,35,1,0,
-        0,0,37,38,1,0,0,0,38,39,1,0,0,0,39,40,5,0,0,1,40,1,1,0,0,0,41,42,
-        3,4,2,0,42,43,5,33,0,0,43,57,1,0,0,0,44,45,3,8,4,0,45,46,5,33,0,
-        0,46,57,1,0,0,0,47,57,3,10,5,0,48,57,3,12,6,0,49,57,3,14,7,0,50,
-        51,3,18,9,0,51,52,5,33,0,0,52,57,1,0,0,0,53,54,3,26,13,0,54,55,5,
-        33,0,0,55,57,1,0,0,0,56,41,1,0,0,0,56,44,1,0,0,0,56,47,1,0,0,0,56,
-        48,1,0,0,0,56,49,1,0,0,0,56,50,1,0,0,0,56,53,1,0,0,0,57,3,1,0,0,
-        0,58,59,5,26,0,0,59,60,5,9,0,0,60,68,5,25,0,0,61,62,5,26,0,0,62,
-        63,5,9,0,0,63,64,5,10,0,0,64,65,5,25,0,0,65,66,5,11,0,0,66,68,3,
-        6,3,0,67,58,1,0,0,0,67,61,1,0,0,0,68,5,1,0,0,0,69,79,5,27,0,0,70,
-        71,5,27,0,0,71,72,5,20,0,0,72,79,5,27,0,0,73,74,5,27,0,0,74,75,5,
-        20,0,0,75,76,5,27,0,0,76,77,5,20,0,0,77,79,5,27,0,0,78,69,1,0,0,
-        0,78,70,1,0,0,0,78,73,1,0,0,0,79,7,1,0,0,0,80,81,5,26,0,0,81,82,
-        5,6,0,0,82,83,3,26,13,0,83,9,1,0,0,0,84,85,5,2,0,0,85,86,3,22,11,
-        0,86,87,5,3,0,0,87,88,3,20,10,0,88,89,5,4,0,0,89,11,1,0,0,0,90,91,
-        5,5,0,0,91,92,3,22,11,0,92,93,5,3,0,0,93,94,3,20,10,0,94,95,5,4,
-        0,0,95,13,1,0,0,0,96,97,5,1,0,0,97,98,5,26,0,0,98,100,5,30,0,0,99,
-        101,3,16,8,0,100,99,1,0,0,0,100,101,1,0,0,0,101,102,1,0,0,0,102,
-        103,5,31,0,0,103,104,5,32,0,0,104,105,3,20,10,0,105,106,5,4,0,0,
-        106,15,1,0,0,0,107,112,5,26,0,0,108,109,5,34,0,0,109,111,5,26,0,
-        0,110,108,1,0,0,0,111,114,1,0,0,0,112,110,1,0,0,0,112,113,1,0,0,
-        0,113,17,1,0,0,0,114,112,1,0,0,0,115,116,5,8,0,0,116,117,3,26,13,
-        0,117,19,1,0,0,0,118,120,3,2,1,0,119,118,1,0,0,0,120,121,1,0,0,0,
-        121,119,1,0,0,0,121,122,1,0,0,0,122,21,1,0,0,0,123,124,6,11,-1,0,
-        124,125,3,26,13,0,125,126,3,24,12,0,126,127,3,26,13,0,127,136,1,
-        0,0,0,128,136,3,26,13,0,129,130,5,24,0,0,130,136,3,22,11,2,131,132,
-        5,30,0,0,132,133,3,22,11,0,133,134,5,31,0,0,134,136,1,0,0,0,135,
-        123,1,0,0,0,135,128,1,0,0,0,135,129,1,0,0,0,135,131,1,0,0,0,136,
-        145,1,0,0,0,137,138,10,4,0,0,138,139,5,22,0,0,139,144,3,22,11,5,
-        140,141,10,3,0,0,141,142,5,23,0,0,142,144,3,22,11,4,143,137,1,0,
-        0,0,143,140,1,0,0,0,144,147,1,0,0,0,145,143,1,0,0,0,145,146,1,0,
-        0,0,146,23,1,0,0,0,147,145,1,0,0,0,148,149,7,0,0,0,149,25,1,0,0,
-        0,150,151,6,13,-1,0,151,158,3,28,14,0,152,153,5,30,0,0,153,154,3,
-        26,13,0,154,155,5,31,0,0,155,158,1,0,0,0,156,158,3,30,15,0,157,150,
-        1,0,0,0,157,152,1,0,0,0,157,156,1,0,0,0,158,176,1,0,0,0,159,160,
-        10,7,0,0,160,161,5,18,0,0,161,175,3,26,13,8,162,163,10,6,0,0,163,
-        164,5,19,0,0,164,175,3,26,13,7,165,166,10,5,0,0,166,167,5,20,0,0,
-        167,175,3,26,13,6,168,169,10,4,0,0,169,170,5,21,0,0,170,175,3,26,
-        13,5,171,172,10,3,0,0,172,173,5,7,0,0,173,175,3,26,13,4,174,159,
-        1,0,0,0,174,162,1,0,0,0,174,165,1,0,0,0,174,168,1,0,0,0,174,171,
-        1,0,0,0,175,178,1,0,0,0,176,174,1,0,0,0,176,177,1,0,0,0,177,27,1,
-        0,0,0,178,176,1,0,0,0,179,180,7,1,0,0,180,29,1,0,0,0,181,182,5,26,
-        0,0,182,184,5,30,0,0,183,185,3,32,16,0,184,183,1,0,0,0,184,185,1,
-        0,0,0,185,186,1,0,0,0,186,187,5,31,0,0,187,31,1,0,0,0,188,193,3,
-        26,13,0,189,190,5,34,0,0,190,192,3,26,13,0,191,189,1,0,0,0,192,195,
-        1,0,0,0,193,191,1,0,0,0,193,194,1,0,0,0,194,33,1,0,0,0,195,193,1,
-        0,0,0,15,37,56,67,78,100,112,121,135,143,145,157,174,176,184,193
+        1,3,1,3,4,3,74,8,3,11,3,12,3,75,3,3,78,8,3,1,4,1,4,1,4,1,4,1,4,1,
+        4,3,4,86,8,4,1,5,1,5,1,5,1,5,1,5,1,5,1,6,1,6,1,6,1,6,1,6,1,6,1,7,
+        1,7,1,7,1,7,3,7,104,8,7,1,7,1,7,1,7,1,7,1,7,1,8,1,8,1,8,5,8,114,
+        8,8,10,8,12,8,117,9,8,1,9,1,9,1,9,1,10,4,10,123,8,10,11,10,12,10,
+        124,1,11,1,11,1,11,1,11,1,11,1,11,1,11,1,11,1,11,1,11,1,11,1,11,
+        3,11,139,8,11,1,11,1,11,1,11,1,11,1,11,1,11,5,11,147,8,11,10,11,
+        12,11,150,9,11,1,12,1,12,1,13,1,13,1,13,1,13,1,13,1,13,1,13,3,13,
+        161,8,13,1,13,1,13,1,13,1,13,1,13,1,13,1,13,1,13,1,13,1,13,1,13,
+        1,13,1,13,1,13,1,13,5,13,178,8,13,10,13,12,13,181,9,13,1,14,1,14,
+        1,15,1,15,1,15,3,15,188,8,15,1,15,1,15,1,16,1,16,1,16,5,16,195,8,
+        16,10,16,12,16,198,9,16,1,16,0,2,22,26,17,0,2,4,6,8,10,12,14,16,
+        18,20,22,24,26,28,30,32,0,2,1,0,12,17,1,0,26,28,210,0,35,1,0,0,0,
+        2,56,1,0,0,0,4,67,1,0,0,0,6,77,1,0,0,0,8,85,1,0,0,0,10,87,1,0,0,
+        0,12,93,1,0,0,0,14,99,1,0,0,0,16,110,1,0,0,0,18,118,1,0,0,0,20,122,
+        1,0,0,0,22,138,1,0,0,0,24,151,1,0,0,0,26,160,1,0,0,0,28,182,1,0,
+        0,0,30,184,1,0,0,0,32,191,1,0,0,0,34,36,3,2,1,0,35,34,1,0,0,0,36,
+        37,1,0,0,0,37,35,1,0,0,0,37,38,1,0,0,0,38,39,1,0,0,0,39,40,5,0,0,
+        1,40,1,1,0,0,0,41,42,3,4,2,0,42,43,5,33,0,0,43,57,1,0,0,0,44,45,
+        3,8,4,0,45,46,5,33,0,0,46,57,1,0,0,0,47,57,3,10,5,0,48,57,3,12,6,
+        0,49,57,3,14,7,0,50,51,3,18,9,0,51,52,5,33,0,0,52,57,1,0,0,0,53,
+        54,3,26,13,0,54,55,5,33,0,0,55,57,1,0,0,0,56,41,1,0,0,0,56,44,1,
+        0,0,0,56,47,1,0,0,0,56,48,1,0,0,0,56,49,1,0,0,0,56,50,1,0,0,0,56,
+        53,1,0,0,0,57,3,1,0,0,0,58,59,5,26,0,0,59,60,5,9,0,0,60,68,5,25,
+        0,0,61,62,5,26,0,0,62,63,5,9,0,0,63,64,5,10,0,0,64,65,5,25,0,0,65,
+        66,5,11,0,0,66,68,3,6,3,0,67,58,1,0,0,0,67,61,1,0,0,0,68,5,1,0,0,
+        0,69,78,5,27,0,0,70,73,5,27,0,0,71,72,5,20,0,0,72,74,5,27,0,0,73,
+        71,1,0,0,0,74,75,1,0,0,0,75,73,1,0,0,0,75,76,1,0,0,0,76,78,1,0,0,
+        0,77,69,1,0,0,0,77,70,1,0,0,0,78,7,1,0,0,0,79,80,5,26,0,0,80,81,
+        5,6,0,0,81,86,3,26,13,0,82,83,5,26,0,0,83,84,5,6,0,0,84,86,3,22,
+        11,0,85,79,1,0,0,0,85,82,1,0,0,0,86,9,1,0,0,0,87,88,5,2,0,0,88,89,
+        3,22,11,0,89,90,5,3,0,0,90,91,3,20,10,0,91,92,5,4,0,0,92,11,1,0,
+        0,0,93,94,5,5,0,0,94,95,3,22,11,0,95,96,5,3,0,0,96,97,3,20,10,0,
+        97,98,5,4,0,0,98,13,1,0,0,0,99,100,5,1,0,0,100,101,5,26,0,0,101,
+        103,5,30,0,0,102,104,3,16,8,0,103,102,1,0,0,0,103,104,1,0,0,0,104,
+        105,1,0,0,0,105,106,5,31,0,0,106,107,5,32,0,0,107,108,3,20,10,0,
+        108,109,5,4,0,0,109,15,1,0,0,0,110,115,5,26,0,0,111,112,5,34,0,0,
+        112,114,5,26,0,0,113,111,1,0,0,0,114,117,1,0,0,0,115,113,1,0,0,0,
+        115,116,1,0,0,0,116,17,1,0,0,0,117,115,1,0,0,0,118,119,5,8,0,0,119,
+        120,3,26,13,0,120,19,1,0,0,0,121,123,3,2,1,0,122,121,1,0,0,0,123,
+        124,1,0,0,0,124,122,1,0,0,0,124,125,1,0,0,0,125,21,1,0,0,0,126,127,
+        6,11,-1,0,127,128,3,26,13,0,128,129,3,24,12,0,129,130,3,26,13,0,
+        130,139,1,0,0,0,131,139,3,26,13,0,132,133,5,24,0,0,133,139,3,22,
+        11,2,134,135,5,30,0,0,135,136,3,22,11,0,136,137,5,31,0,0,137,139,
+        1,0,0,0,138,126,1,0,0,0,138,131,1,0,0,0,138,132,1,0,0,0,138,134,
+        1,0,0,0,139,148,1,0,0,0,140,141,10,4,0,0,141,142,5,22,0,0,142,147,
+        3,22,11,5,143,144,10,3,0,0,144,145,5,23,0,0,145,147,3,22,11,4,146,
+        140,1,0,0,0,146,143,1,0,0,0,147,150,1,0,0,0,148,146,1,0,0,0,148,
+        149,1,0,0,0,149,23,1,0,0,0,150,148,1,0,0,0,151,152,7,0,0,0,152,25,
+        1,0,0,0,153,154,6,13,-1,0,154,161,3,28,14,0,155,156,5,30,0,0,156,
+        157,3,26,13,0,157,158,5,31,0,0,158,161,1,0,0,0,159,161,3,30,15,0,
+        160,153,1,0,0,0,160,155,1,0,0,0,160,159,1,0,0,0,161,179,1,0,0,0,
+        162,163,10,7,0,0,163,164,5,18,0,0,164,178,3,26,13,8,165,166,10,6,
+        0,0,166,167,5,19,0,0,167,178,3,26,13,7,168,169,10,5,0,0,169,170,
+        5,20,0,0,170,178,3,26,13,6,171,172,10,4,0,0,172,173,5,21,0,0,173,
+        178,3,26,13,5,174,175,10,3,0,0,175,176,5,7,0,0,176,178,3,26,13,4,
+        177,162,1,0,0,0,177,165,1,0,0,0,177,168,1,0,0,0,177,171,1,0,0,0,
+        177,174,1,0,0,0,178,181,1,0,0,0,179,177,1,0,0,0,179,180,1,0,0,0,
+        180,27,1,0,0,0,181,179,1,0,0,0,182,183,7,1,0,0,183,29,1,0,0,0,184,
+        185,5,26,0,0,185,187,5,30,0,0,186,188,3,32,16,0,187,186,1,0,0,0,
+        187,188,1,0,0,0,188,189,1,0,0,0,189,190,5,31,0,0,190,31,1,0,0,0,
+        191,196,3,26,13,0,192,193,5,34,0,0,193,195,3,26,13,0,194,192,1,0,
+        0,0,195,198,1,0,0,0,196,194,1,0,0,0,196,197,1,0,0,0,197,33,1,0,0,
+        0,198,196,1,0,0,0,17,37,56,67,75,77,85,103,115,124,138,146,148,160,
+        177,179,187,196
     ]
 
 class parserGramaticaEspanol ( Parser ):
@@ -503,10 +505,11 @@ class parserGramaticaEspanol ( Parser ):
 
         localctx = parserGramaticaEspanol.DimensionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 6, self.RULE_dimension)
+        self._la = 0 # Token type
         try:
-            self.state = 78
+            self.state = 77
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,3,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,4,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 69
@@ -517,24 +520,20 @@ class parserGramaticaEspanol ( Parser ):
                 self.enterOuterAlt(localctx, 2)
                 self.state = 70
                 self.match(parserGramaticaEspanol.NUMERO)
-                self.state = 71
-                self.match(parserGramaticaEspanol.POR)
-                self.state = 72
-                self.match(parserGramaticaEspanol.NUMERO)
-                pass
+                self.state = 73 
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                while True:
+                    self.state = 71
+                    self.match(parserGramaticaEspanol.POR)
+                    self.state = 72
+                    self.match(parserGramaticaEspanol.NUMERO)
+                    self.state = 75 
+                    self._errHandler.sync(self)
+                    _la = self._input.LA(1)
+                    if not (_la==20):
+                        break
 
-            elif la_ == 3:
-                self.enterOuterAlt(localctx, 3)
-                self.state = 73
-                self.match(parserGramaticaEspanol.NUMERO)
-                self.state = 74
-                self.match(parserGramaticaEspanol.POR)
-                self.state = 75
-                self.match(parserGramaticaEspanol.NUMERO)
-                self.state = 76
-                self.match(parserGramaticaEspanol.POR)
-                self.state = 77
-                self.match(parserGramaticaEspanol.NUMERO)
                 pass
 
 
@@ -564,6 +563,10 @@ class parserGramaticaEspanol ( Parser ):
             return self.getTypedRuleContext(parserGramaticaEspanol.ExpresionContext,0)
 
 
+        def condicion(self):
+            return self.getTypedRuleContext(parserGramaticaEspanol.CondicionContext,0)
+
+
         def getRuleIndex(self):
             return parserGramaticaEspanol.RULE_asignacion
 
@@ -589,13 +592,30 @@ class parserGramaticaEspanol ( Parser ):
         localctx = parserGramaticaEspanol.AsignacionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 8, self.RULE_asignacion)
         try:
-            self.enterOuterAlt(localctx, 1)
-            self.state = 80
-            self.match(parserGramaticaEspanol.ID)
-            self.state = 81
-            self.match(parserGramaticaEspanol.ASIGNA)
-            self.state = 82
-            self.expresion(0)
+            self.state = 85
+            self._errHandler.sync(self)
+            la_ = self._interp.adaptivePredict(self._input,5,self._ctx)
+            if la_ == 1:
+                self.enterOuterAlt(localctx, 1)
+                self.state = 79
+                self.match(parserGramaticaEspanol.ID)
+                self.state = 80
+                self.match(parserGramaticaEspanol.ASIGNA)
+                self.state = 81
+                self.expresion(0)
+                pass
+
+            elif la_ == 2:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 82
+                self.match(parserGramaticaEspanol.ID)
+                self.state = 83
+                self.match(parserGramaticaEspanol.ASIGNA)
+                self.state = 84
+                self.condicion(0)
+                pass
+
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -655,15 +675,15 @@ class parserGramaticaEspanol ( Parser ):
         self.enterRule(localctx, 10, self.RULE_sentencia_if)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 84
-            self.match(parserGramaticaEspanol.SI)
-            self.state = 85
-            self.condicion(0)
-            self.state = 86
-            self.match(parserGramaticaEspanol.ENTONCES)
             self.state = 87
-            self.bloque()
+            self.match(parserGramaticaEspanol.SI)
             self.state = 88
+            self.condicion(0)
+            self.state = 89
+            self.match(parserGramaticaEspanol.ENTONCES)
+            self.state = 90
+            self.bloque()
+            self.state = 91
             self.match(parserGramaticaEspanol.FIN)
         except RecognitionException as re:
             localctx.exception = re
@@ -724,15 +744,15 @@ class parserGramaticaEspanol ( Parser ):
         self.enterRule(localctx, 12, self.RULE_sentencia_while)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 90
-            self.match(parserGramaticaEspanol.MIENTRAS)
-            self.state = 91
-            self.condicion(0)
-            self.state = 92
-            self.match(parserGramaticaEspanol.ENTONCES)
             self.state = 93
-            self.bloque()
+            self.match(parserGramaticaEspanol.MIENTRAS)
             self.state = 94
+            self.condicion(0)
+            self.state = 95
+            self.match(parserGramaticaEspanol.ENTONCES)
+            self.state = 96
+            self.bloque()
+            self.state = 97
             self.match(parserGramaticaEspanol.FIN)
         except RecognitionException as re:
             localctx.exception = re
@@ -803,27 +823,27 @@ class parserGramaticaEspanol ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 96
+            self.state = 99
             self.match(parserGramaticaEspanol.FUNCION)
-            self.state = 97
-            self.match(parserGramaticaEspanol.ID)
-            self.state = 98
-            self.match(parserGramaticaEspanol.PARENTESIS_IZQ)
             self.state = 100
+            self.match(parserGramaticaEspanol.ID)
+            self.state = 101
+            self.match(parserGramaticaEspanol.PARENTESIS_IZQ)
+            self.state = 103
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==26:
-                self.state = 99
+                self.state = 102
                 self.parametros()
 
 
-            self.state = 102
-            self.match(parserGramaticaEspanol.PARENTESIS_DER)
-            self.state = 103
-            self.match(parserGramaticaEspanol.DOS_PUNTOS)
-            self.state = 104
-            self.bloque()
             self.state = 105
+            self.match(parserGramaticaEspanol.PARENTESIS_DER)
+            self.state = 106
+            self.match(parserGramaticaEspanol.DOS_PUNTOS)
+            self.state = 107
+            self.bloque()
+            self.state = 108
             self.match(parserGramaticaEspanol.FIN)
         except RecognitionException as re:
             localctx.exception = re
@@ -880,17 +900,17 @@ class parserGramaticaEspanol ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 107
+            self.state = 110
             self.match(parserGramaticaEspanol.ID)
-            self.state = 112
+            self.state = 115
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==34:
-                self.state = 108
+                self.state = 111
                 self.match(parserGramaticaEspanol.COMA)
-                self.state = 109
+                self.state = 112
                 self.match(parserGramaticaEspanol.ID)
-                self.state = 114
+                self.state = 117
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -943,9 +963,9 @@ class parserGramaticaEspanol ( Parser ):
         self.enterRule(localctx, 18, self.RULE_retorno)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 115
+            self.state = 118
             self.match(parserGramaticaEspanol.DEVUELVE)
-            self.state = 116
+            self.state = 119
             self.expresion(0)
         except RecognitionException as re:
             localctx.exception = re
@@ -997,13 +1017,13 @@ class parserGramaticaEspanol ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 119 
+            self.state = 122 
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while True:
-                self.state = 118
+                self.state = 121
                 self.instruccion()
-                self.state = 121 
+                self.state = 124 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 if not ((((_la) & ~0x3f) == 0 and ((1 << _la) & 1543504166) != 0)):
@@ -1086,82 +1106,82 @@ class parserGramaticaEspanol ( Parser ):
         self.enterRecursionRule(localctx, 22, self.RULE_condicion, _p)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 135
+            self.state = 138
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,7,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,9,self._ctx)
             if la_ == 1:
-                self.state = 124
+                self.state = 127
                 self.expresion(0)
-                self.state = 125
+                self.state = 128
                 self.operador_relacional()
-                self.state = 126
+                self.state = 129
                 self.expresion(0)
                 pass
 
             elif la_ == 2:
-                self.state = 128
+                self.state = 131
                 self.expresion(0)
                 pass
 
             elif la_ == 3:
-                self.state = 129
+                self.state = 132
                 self.match(parserGramaticaEspanol.NO)
-                self.state = 130
+                self.state = 133
                 self.condicion(2)
                 pass
 
             elif la_ == 4:
-                self.state = 131
+                self.state = 134
                 self.match(parserGramaticaEspanol.PARENTESIS_IZQ)
-                self.state = 132
+                self.state = 135
                 self.condicion(0)
-                self.state = 133
+                self.state = 136
                 self.match(parserGramaticaEspanol.PARENTESIS_DER)
                 pass
 
 
             self._ctx.stop = self._input.LT(-1)
-            self.state = 145
+            self.state = 148
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,9,self._ctx)
+            _alt = self._interp.adaptivePredict(self._input,11,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
                     if self._parseListeners is not None:
                         self.triggerExitRuleEvent()
                     _prevctx = localctx
-                    self.state = 143
+                    self.state = 146
                     self._errHandler.sync(self)
-                    la_ = self._interp.adaptivePredict(self._input,8,self._ctx)
+                    la_ = self._interp.adaptivePredict(self._input,10,self._ctx)
                     if la_ == 1:
                         localctx = parserGramaticaEspanol.CondicionContext(self, _parentctx, _parentState)
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_condicion)
-                        self.state = 137
+                        self.state = 140
                         if not self.precpred(self._ctx, 4):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 4)")
-                        self.state = 138
+                        self.state = 141
                         self.match(parserGramaticaEspanol.Y)
-                        self.state = 139
+                        self.state = 142
                         self.condicion(5)
                         pass
 
                     elif la_ == 2:
                         localctx = parserGramaticaEspanol.CondicionContext(self, _parentctx, _parentState)
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_condicion)
-                        self.state = 140
+                        self.state = 143
                         if not self.precpred(self._ctx, 3):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 3)")
-                        self.state = 141
+                        self.state = 144
                         self.match(parserGramaticaEspanol.O)
-                        self.state = 142
+                        self.state = 145
                         self.condicion(4)
                         pass
 
              
-                self.state = 147
+                self.state = 150
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,9,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,11,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -1224,7 +1244,7 @@ class parserGramaticaEspanol ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 148
+            self.state = 151
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 258048) != 0)):
                 self._errHandler.recoverInline(self)
@@ -1311,110 +1331,110 @@ class parserGramaticaEspanol ( Parser ):
         self.enterRecursionRule(localctx, 26, self.RULE_expresion, _p)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 157
+            self.state = 160
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,10,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,12,self._ctx)
             if la_ == 1:
-                self.state = 151
+                self.state = 154
                 self.termino()
                 pass
 
             elif la_ == 2:
-                self.state = 152
+                self.state = 155
                 self.match(parserGramaticaEspanol.PARENTESIS_IZQ)
-                self.state = 153
+                self.state = 156
                 self.expresion(0)
-                self.state = 154
+                self.state = 157
                 self.match(parserGramaticaEspanol.PARENTESIS_DER)
                 pass
 
             elif la_ == 3:
-                self.state = 156
+                self.state = 159
                 self.llamada_funcion()
                 pass
 
 
             self._ctx.stop = self._input.LT(-1)
-            self.state = 176
+            self.state = 179
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,12,self._ctx)
+            _alt = self._interp.adaptivePredict(self._input,14,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
                     if self._parseListeners is not None:
                         self.triggerExitRuleEvent()
                     _prevctx = localctx
-                    self.state = 174
+                    self.state = 177
                     self._errHandler.sync(self)
-                    la_ = self._interp.adaptivePredict(self._input,11,self._ctx)
+                    la_ = self._interp.adaptivePredict(self._input,13,self._ctx)
                     if la_ == 1:
                         localctx = parserGramaticaEspanol.ExpresionContext(self, _parentctx, _parentState)
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expresion)
-                        self.state = 159
+                        self.state = 162
                         if not self.precpred(self._ctx, 7):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 7)")
-                        self.state = 160
+                        self.state = 163
                         self.match(parserGramaticaEspanol.MAS)
-                        self.state = 161
+                        self.state = 164
                         self.expresion(8)
                         pass
 
                     elif la_ == 2:
                         localctx = parserGramaticaEspanol.ExpresionContext(self, _parentctx, _parentState)
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expresion)
-                        self.state = 162
+                        self.state = 165
                         if not self.precpred(self._ctx, 6):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 6)")
-                        self.state = 163
+                        self.state = 166
                         self.match(parserGramaticaEspanol.MENOS)
-                        self.state = 164
+                        self.state = 167
                         self.expresion(7)
                         pass
 
                     elif la_ == 3:
                         localctx = parserGramaticaEspanol.ExpresionContext(self, _parentctx, _parentState)
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expresion)
-                        self.state = 165
+                        self.state = 168
                         if not self.precpred(self._ctx, 5):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 5)")
-                        self.state = 166
+                        self.state = 169
                         self.match(parserGramaticaEspanol.POR)
-                        self.state = 167
+                        self.state = 170
                         self.expresion(6)
                         pass
 
                     elif la_ == 4:
                         localctx = parserGramaticaEspanol.ExpresionContext(self, _parentctx, _parentState)
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expresion)
-                        self.state = 168
+                        self.state = 171
                         if not self.precpred(self._ctx, 4):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 4)")
-                        self.state = 169
+                        self.state = 172
                         self.match(parserGramaticaEspanol.ENTRE)
-                        self.state = 170
+                        self.state = 173
                         self.expresion(5)
                         pass
 
                     elif la_ == 5:
                         localctx = parserGramaticaEspanol.ExpresionContext(self, _parentctx, _parentState)
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expresion)
-                        self.state = 171
+                        self.state = 174
                         if not self.precpred(self._ctx, 3):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 3)")
-                        self.state = 172
+                        self.state = 175
                         self.match(parserGramaticaEspanol.A_LA)
-                        self.state = 173
+                        self.state = 176
                         self.expresion(4)
                         pass
 
              
-                self.state = 178
+                self.state = 181
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,12,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,14,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -1468,7 +1488,7 @@ class parserGramaticaEspanol ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 179
+            self.state = 182
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 469762048) != 0)):
                 self._errHandler.recoverInline(self)
@@ -1531,19 +1551,19 @@ class parserGramaticaEspanol ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 181
-            self.match(parserGramaticaEspanol.ID)
-            self.state = 182
-            self.match(parserGramaticaEspanol.PARENTESIS_IZQ)
             self.state = 184
+            self.match(parserGramaticaEspanol.ID)
+            self.state = 185
+            self.match(parserGramaticaEspanol.PARENTESIS_IZQ)
+            self.state = 187
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if (((_la) & ~0x3f) == 0 and ((1 << _la) & 1543503872) != 0):
-                self.state = 183
+                self.state = 186
                 self.argumentos()
 
 
-            self.state = 186
+            self.state = 189
             self.match(parserGramaticaEspanol.PARENTESIS_DER)
         except RecognitionException as re:
             localctx.exception = re
@@ -1601,17 +1621,17 @@ class parserGramaticaEspanol ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 188
+            self.state = 191
             self.expresion(0)
-            self.state = 193
+            self.state = 196
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==34:
-                self.state = 189
+                self.state = 192
                 self.match(parserGramaticaEspanol.COMA)
-                self.state = 190
+                self.state = 193
                 self.expresion(0)
-                self.state = 195
+                self.state = 198
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 

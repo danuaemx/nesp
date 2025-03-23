@@ -1,4 +1,4 @@
-# Generated from src/parserGramaticaEspanol.g4 by ANTLR 4.13.2
+# Generated from src_main/parserGramaticaEspanol.g4 by ANTLR 4.13.2
 from antlr4 import *
 if "." in __name__:
     from .parserGramaticaEspanol import parserGramaticaEspanol

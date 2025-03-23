@@ -29,13 +29,13 @@ declaracion
 // Dimensiones de arreglos (1D, 2D, 3D, etc.)
 dimension
     : NUMERO                                                       
-    | NUMERO POR NUMERO                                           
-    | NUMERO POR NUMERO POR NUMERO                                 
+    | NUMERO (POR NUMERO)+
     ;
 
 // Asignaciones
 asignacion
     : ID ASIGNA expresion
+    | ID ASIGNA condicion
     ;
 
 // Estructuras de control
