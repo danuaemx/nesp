@@ -34,6 +34,11 @@ class parserGramaticaEspanolVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by parserGramaticaEspanol#designador.
+    def visitDesignador(self, ctx:parserGramaticaEspanol.DesignadorContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by parserGramaticaEspanol#sentencia_if.
     def visitSentencia_if(self, ctx:parserGramaticaEspanol.Sentencia_ifContext):
         return self.visitChildren(ctx)
@@ -81,6 +86,11 @@ class parserGramaticaEspanolVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by parserGramaticaEspanol#termino.
     def visitTermino(self, ctx:parserGramaticaEspanol.TerminoContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by parserGramaticaEspanol#lista_indices.
+    def visitLista_indices(self, ctx:parserGramaticaEspanol.Lista_indicesContext):
         return self.visitChildren(ctx)
 
 

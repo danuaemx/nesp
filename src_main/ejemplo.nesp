@@ -18,9 +18,18 @@ vector es un arreglo de entero de 10.
 matriz es un arreglo de real de 3 por 3.
 cubo es un arreglo de entero de 2 por 2 por 2.
 
+Nota: Declaración de variables para almacenar valores de arreglos./
+valorVector es un entero.
+valorMatriz es un real.
+valorCubo es un entero.
+sumaIndices es un entero.
+
+
 Nota: Ejemplo de asignación y operaciones./
 contador asigna 1.
 mientras contador es menor que 10 entonces:
+    vector[contador] asigna contador por 5.
+    Nota: Asignación a un elemento del vector./
     contador asigna contador mas 1.
     si contador es igual que 5 entonces:
         Nota: Esto es un comentario dentro del bloque./
@@ -30,3 +39,13 @@ fin
 
 resultado asigna 2 a la 3.
 nombre asigna "Hola Mundo".
+
+Nota: Nuevos ejemplos de recuperación de valores de arreglos./
+valorVector asigna vector[3].             Nota: Recupera el valor en el índice 3 del vector./
+matriz[1, 2] asigna 9.81.                  Nota: Asigna un valor a un elemento de la matriz./
+valorMatriz asigna matriz[1, 2].           Nota: Recupera el valor en la fila 1, columna 2 de la matriz./
+cubo[0, 1, 0] asigna 42.                   Nota: Asigna un valor a un elemento del cubo./
+valorCubo asigna cubo[0, 1, 0] .           Nota: Recupera el valor en las coordenadas 0, 1, 0 del cubo./
+
+Nota: Usando acceso a arreglo dentro de una expresión./
+sumaIndices asigna vector[1] mas vector[2]. Nota: Suma los valores de dos elementos del vector./

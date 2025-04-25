@@ -60,6 +60,8 @@ COMENTARIO : 'Nota:' .*? '/' -> skip;
 
 PARENTESIS_IZQ : '(';
 PARENTESIS_DER : ')';
+CORCHETE_IZQ   : '[';
+CORCHETE_DER   : ']';
 DOS_PUNTOS : ':';
 PUNTO : '.';
 COMA : ',';

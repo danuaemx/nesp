@@ -53,6 +53,15 @@ class parserGramaticaEspanolListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by parserGramaticaEspanol#designador.
+    def enterDesignador(self, ctx:parserGramaticaEspanol.DesignadorContext):
+        pass
+
+    # Exit a parse tree produced by parserGramaticaEspanol#designador.
+    def exitDesignador(self, ctx:parserGramaticaEspanol.DesignadorContext):
+        pass
+
+
     # Enter a parse tree produced by parserGramaticaEspanol#sentencia_if.
     def enterSentencia_if(self, ctx:parserGramaticaEspanol.Sentencia_ifContext):
         pass
@@ -140,6 +149,15 @@ class parserGramaticaEspanolListener(ParseTreeListener):
 
     # Exit a parse tree produced by parserGramaticaEspanol#termino.
     def exitTermino(self, ctx:parserGramaticaEspanol.TerminoContext):
+        pass
+
+
+    # Enter a parse tree produced by parserGramaticaEspanol#lista_indices.
+    def enterLista_indices(self, ctx:parserGramaticaEspanol.Lista_indicesContext):
+        pass
+
+    # Exit a parse tree produced by parserGramaticaEspanol#lista_indices.
+    def exitLista_indices(self, ctx:parserGramaticaEspanol.Lista_indicesContext):
         pass
 
 
